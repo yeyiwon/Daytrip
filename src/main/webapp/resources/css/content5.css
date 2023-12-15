@@ -1,0 +1,304 @@
+
+.con5top{
+    padding: 1em;
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* background: url(../img/background1.jpg) no-repeat center / cover; */
+    justify-content: space-between;
+}
+.contop_L{
+    gap: 30px;
+    /* width: 50%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.contop_3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    width: 225px;
+    height: 190px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#FF6BA1, #C9D6FF 84.75%);
+    color: #333333;
+    /*background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #EBECF0;*/
+    background-blend-mode: soft-light, normal;
+    /*box-shadow: 1px 1px 1px 0px #A6ABBD, -1px -1px 1px 0px #FAFBFF;*/
+    border-radius: 20px;
+}
+
+#weather_info {
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
+    text-align: center;
+    justify-content: center;
+}
+.w_1{
+    font-size: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.w_2{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#current_temp{font-size: 35px;}
+#weather_icon {width: 70px;height: 70px;}
+#current_weather{font-size: 20px;}
+
+/*.nowtime{*/
+/*    */
+/*}*/
+
+.profileimg{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(122deg, rgba(0, 0, 0, 0.35) 146.29%, rgba(255, 255, 255, 0.35) -3.4%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    box-shadow: 1px 1px 1px 0px #A6ABBD, -1px -1px 1px 0px #FAFBFF;
+    align-items: center;
+    justify-content: center;
+}
+.imgcan{
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px 0px #A6ABBD, -10px -10px 10px 0px #FAFBFF;
+}
+.imgcan > img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.linktitle{
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+    line-height: 100px;
+
+}
+
+.contop_R{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.name{
+    width: 150px;
+    height: 50px;
+    font-size: 40px;
+    /* font-weight: bold; */
+}
+
+.btnbox{
+    display: flex;
+    gap: 10px;
+}
+
+.profilemodify{
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    font-size: 23px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    /*!*background: #C9D6FF;*!*/
+    /*opacity: 0.8;*/
+    font-weight: bold;
+    color: #333333;
+    background-blend-mode: soft-light, normal;
+    box-shadow: 1px 1px 1px 0px #A6ABBD;
+    border-radius: 10px;
+}
+.profilemodify > img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.con5bot{
+    width: 100%;
+    height: 70%;
+    /* background: #333333; */
+}
+.con5_nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    line-height: 70px;
+    text-align: center;
+    /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #D3f5cf;; */
+    background-blend-mode: soft-light, normal;
+    box-shadow: 1px 1px 1px 0px #A6ABBD, -1px -1px 1px 0px #FAFBFF;
+}
+.navitm{
+    cursor: pointer;
+    font-size: 25px;
+
+    width: calc(100% / 2);
+    /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35); */
+}
+.navitm.active{
+    /*color: #ffffff;*/
+    /*background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #C9D6FF;*/
+    /*background-blend-mode: soft-light, normal;*/
+    /*box-shadow: 5px 5px 10px 0px #A6ABBD, -5px -5px 10px 0px #FAFBFF;*/
+    border-bottom: 3px solid #333;
+}
+
+.contentbox {
+    width: 100%;
+    height: 100vh; /* or you can adjust this to a specific height if you prefer */
+    box-sizing: border-box;
+    padding: 1rem;
+    display: none;
+}
+
+.contentbox.active2 {
+    display: block;
+}
+
+
+/* 마이로그 */
+.container {
+    padding: 1rem;
+    box-sizing: border-box;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.mylogtitle{
+    gap: 20px;
+    font-size: 22px;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.myl_L{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.entry{
+    font-size: 32px;
+    color: #555555;
+}
+.myl_inner{
+    display: flex;
+    flex-direction: column;
+    /*gap: 10px;*/
+    justify-content: space-between;
+}
+.myl_R{
+    color: #666;
+    font-size: 22px;
+    gap: 15px;
+    display: flex;
+}
+
+.box2{
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.namename{
+    font-size: 26px;
+    width: 100px;
+    height: 30px;
+    color: #999999;
+}
+
+.profileimg1{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #EBECF0;
+    background-blend-mode: soft-light, normal;
+    box-shadow: 1px 1px 1px 0px #A6ABBD, -1px -1px 1px 0px #FAFBFF;
+    align-items: center;
+    justify-content: center;
+}
+.imgcan1{
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px 0px #A6ABBD, -10px -10px 10px 0px #FAFBFF;
+}
+.imgcan1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-space {
+    padding: 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    height: 400px;
+
+}
+.imgbox{
+    width: 100%;
+    height: 100%;
+}
+
+.img1{
+    margin-left: 25px;
+    width: 300px;
+    height: 350px;
+}
+
+.img1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    /*margin-bottom: 20px;*/
+}
+
+.line{
+    margin: 30px;
+    display: block;
+    height: 1px;
+    width: 60%;
+    background-color: #ddd;
+}
+
+

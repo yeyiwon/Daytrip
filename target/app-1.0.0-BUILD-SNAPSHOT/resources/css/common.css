@@ -1,0 +1,331 @@
+html, body{
+    overflow: hidden;
+    margin: 0; font-family: 'omyu_pretty', sans-serif;}
+
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+}
+
+ul{list-style: none;padding: 0;margin: 0;}
+a{text-decoration: none;color: inherit;}
+
+#wrap{
+    width: 800px; margin: 0 auto; position: relative;
+}
+.w_800{
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* 탭 항상 고정*/
+.tab-container {
+    background: #fff;
+    box-sizing: border-box;
+    width: 800px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.tab-container{
+    cursor: pointer;
+    background: #fff;
+    /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #EBECF0; */
+    background-blend-mode: soft-light, normal;
+    box-shadow: 5px 5px 10px 0px #A6ABBD, -5px -5px 10px 0px #FAFBFF;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 800px;
+    height: 60px;
+    display: flex;
+    border-radius: 8px 8px 0 0;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    bottom: 0;
+}
+
+.navbaritem img {
+    width: 35px;
+    height: 35px;
+}
+.navbaritem a.active3 {
+    border-bottom: 2px solid #FF747c ;
+}
+.myimg{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid #333333;
+    overflow: hidden;
+}
+.myimg > img{
+    width: 100%;
+    height: 100%;
+}
+
+/* search */
+.search{
+    padding: 10px;
+    box-sizing: border-box;
+    background-blend-mode: soft-light, normal;
+    box-shadow: 1px 1px 1px 0px #A6ABBD, -1px -1px 1px 0px #FAFBFF;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.search img{
+    width: 25px;
+    height: 25px;
+}
+.searchinput{
+    font-family: 'omyu_pretty';
+    width: 100%;
+    font-size: 19px;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.search2{
+    height: 55px;
+    width: 100%;
+    padding: 0.7em;
+    box-sizing: border-box;
+    /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #EBECF0; */
+    background-blend-mode: soft-light, normal;
+    box-shadow: 10px 10px 13px -9px #A6ABBD, -1px -1px 1px 0px #FAFBFF;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.search2 img{
+    width: 25px;
+    height: 25px;
+}
+
+
+/* check 박스 커스텀 */
+
+.checkbox input {
+    display: none;
+}
+.checkbox span {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.checkbox .icon {
+    position: relative;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #c8ccd4;
+    border-radius: 3px;
+    transition: background 0.1s ease;
+}
+
+.checkbox .icon::after{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 11px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg) scale(0);
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    opacity: 0;
+}
+.checkbox .text {
+    margin-left: 5px;
+}
+
+.checkbox input:checked ~ .icon {
+    border-color: transparent;
+    background: #FF747c;
+    animation: jelly 0.6s ease;
+}
+.checkbox input:checked ~ .icon::after {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+}
+@keyframes jelly {
+    0%{transform: scale(1, 1);}
+    30%{transform: scale(1.25, 0.75);}
+    40%{transform: scale(0.75, 1.25);}
+    50%{transform: scale(1.15, 0.85);}
+    65%{transform: scale(0.95, 1.05);}
+    75%{transform: scale(1.05, 0.95);}
+    to{transform: scale(1,1);}
+
+}
+
+/* 박스 */
+
+.common_box {
+    width: 100%;
+    min-width: 700px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* 뒤로가기 버튼  */
+.backbtn{
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    height: 45px;
+    /* background: url(../img/icon/backbtn2.png) no-repeat center / contain; */
+}
+.backbtn > a{
+    display: flex;
+    align-items: center;
+}
+
+.backbtn > a > span{
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s;
+}
+.backbtn > a > img {
+    width: 40px;
+    height: 40px;
+}
+
+.backbtn:hover span{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ok 버튼  */
+.btnstyle{
+    font-family: 'omyu_pretty', sans-serif;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%),#C9D6FF;
+    background-blend-mode: soft-light, normal;
+    box-shadow: 5px 5px 10px 0px #A6ABBD, -5px -5px 10px 0px #FAFBFF;
+}
+
+/* 회원가입 ok*/
+.join_ok{
+    margin-top: 30px;
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+}
+/* 로그인 ok */
+.login_ok{
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #C9D6FF;
+
+}
+.sign_up{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #5e6eaf;
+}
+.newlogbtn{
+
+}
+
+.btnstyle:hover, .btnstyle:focus {
+    background-color: #333333;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/*버튼 호버 */
+.sign_up:hover{
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #FF747c;
+}
+.login_ok:hover{
+    color: #ffffff;
+    background: #333333;
+    /*background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #5e6eaf;*/
+}
+.join_ok:hover{
+    color: #ffffff;
+    background: #333333;
+    /*background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #5e6eaf;*/
+}
+.profilemodify:hover{
+    box-shadow: 0px 0px 0px 1px rgba(25,25,25,0.1);
+    color: #ffffff;
+    background: #333333;
+    /*border-bottom: 1px solid #ccc;*/
+    /*color: #ffffff;*/
+    /*background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #5e6eaf;*/
+}
+/*.newlogbtn:hover{*/
+/*    border-bottom: 1px solid #ccc;*/
+/*    !*background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #FF747c;*!*/
+/*}*/
+/*.newlogbtn:hover img{*/
+/*    transform: scale(1.2);*/
+/*}*/
+
+
+
+.sign_up a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.searchbtn{
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 20px;
+    line-height: 40px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%), #FF747c;
+}
+
+.btnstyle > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+@media screen and (max-width: 768px) {
+    #wrap, .w_800, .tab-container {
+        width: 100%;
+    }
+
+    .common_box {
+        min-width: 0;
+    }
+
+    .btnstyle {
+        padding: 0.5em;
+        font-size: 18px;
+    }
+}
