@@ -60,7 +60,8 @@
 
 ## 👏🏻 회원가입 시연영상 
 ![회원가입시연영상.gif](src%2Fmain%2Fwebapp%2Fresources%2FReadme%2F%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EC%8B%9C%EC%97%B0%EC%98%81%EC%83%81.gif)
-👏🏻 회원가입 후 이렇게 디비에 저장 됨 
+
+#### 👏🏻 회원가입 후 이렇게 디비에 저장 됨 
 ![회원가입디비저장.jpg](src%2Fmain%2Fwebapp%2Fresources%2FReadme%2F%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EB%94%94%EB%B9%84%EC%A0%80%EC%9E%A5.jpg)
 ## 날씨 api 
 ![날씨api.png](src%2Fmain%2Fwebapp%2Fresources%2FReadme%2F%EB%82%A0%EC%94%A8api.png)
